@@ -20,7 +20,7 @@ import BentoItem from "./BentoItem.astro"
 
             <span 
                 slot="content" 
-                class="max-w-xl flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 text-center text-4xl font-bold mx-auto my-auto"
+                class="text-white max-w-xl flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 text-center text-4xl font-bold mx-auto my-auto"
             >
                 24°
             </span>
@@ -38,7 +38,7 @@ import BentoItem from "./BentoItem.astro"
 
             <span 
                 slot="content" 
-                class="max-w-xl flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 text-center text-4xl font-bold mx-auto my-auto"
+                class="text-white max-w-xl flex items-center justify-center w-20 h-20 rounded-full bg-gray-800 text-center text-4xl font-bold mx-auto my-auto"
             >
                 5lx
             </span>
@@ -57,22 +57,198 @@ import BentoItem from "./BentoItem.astro"
 
             <span 
                 slot="content" 
-                class="max-w-xl flex items-center justify-center w-40 h-40 rounded-none bg-gray-800 text-center text-4xl font-bold mx-auto my-auto"
+                class=" text-white max-w-xl flex items-center justify-center w-40 h-40 rounded-none bg-gray-800 text-center text-4xl font-bold mx-auto my-auto"
                 style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"
             >
                 10uv
             </span>
         </BentoItem>
-        <BentoItem class="" title="Temperatura Exterior"/>
-        <BentoItem class="" title="Temperatura Interior"/>
-        <BentoItem class="" title="Humedad Interior"/>
-        <BentoItem class="" title="Humedad Exterior"/>
-        <BentoItem class="" title="Presión Relativa"/>
-        <BentoItem class="" title="Presión Absoluta"/>
-        <BentoItem class="" title="Velocidad del Viento"/>
-        <BentoItem class="" title="Dirección del Viento"/>
-        <BentoItem class="" title="Ráfaga del Viento"/>
-        <BentoItem class="" title="Punto de Rocio"/>
-        <BentoItem class="" title="Lluvia por Hora"/>
+        <BentoItem class="" title="Temperatura Exterior">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Temperatura Interior">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Humedad Interior">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Humedad Exterior">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Presión Relativa">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Presión Absoluta">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Velocidad del Viento">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Dirección del Viento">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Ráfaga del Viento">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Punto de Rocio">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
+        <BentoItem class="" title="Lluvia por Hora">
+            <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full 
+                w-full bg-blue-950 bg-cover bg-center bg-no-repeat duration-1000 ease-in-out 
+                group-hover:scale-110"
+                style="background-image: url('/fondo.jpg')"
+            > 
+            </div>
+
+            <span
+                slot="content"
+                class="text-white max-w-xl flex items-center justify-center text-center text-5xl font-bold mx-auto my-auto"
+            >
+                25°
+            </span>
+        </BentoItem>
 
 </section>

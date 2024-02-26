@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
 import Bento from '../components/Bento.astro'
+import DatePicker from '../components/DatePicker.astro'
 ---
 
 <Layout 
@@ -10,8 +11,9 @@ import Bento from '../components/Bento.astro'
 	description='Es una aplicación web que extrae los datos meterológicos de la ciudad de Huánuco'
 >
 	<main>
-		<h1 class="text-white px-10">Estación Senati Huánuco</h1>
+		<h1 class="text-white px-12">Estación Senati Huánuco</h1>
 		<Bento />
+		<DatePicker  />
 	</main>
 	<Footer />
 </Layout>
