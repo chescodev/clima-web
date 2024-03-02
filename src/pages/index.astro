@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Bento from '../components/Bento.astro'
 import DatePicker from '../components/DatePicker.astro'
 import Graphics from '../components/Graphics.astro'
+import Tabs from '../components/Tabs.astro'
 ---
 
 <Layout 
@@ -14,13 +15,13 @@ import Graphics from '../components/Graphics.astro'
 	<main>
 		<h1 class="text-white px-12">Estación Senati Huánuco</h1>
 		<Bento />
+		<h2 class="text-white px-10">Datos Históricos</h2>
 		<DatePicker  />
-		<h2 class="text-white px-12">Gráficos</h2>
-		<Graphics />
+		<Tabs />
 	</main>
 	<Footer />
 </Layout>
 
 <style>
-
+	
 </style>
