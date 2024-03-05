@@ -2,6 +2,7 @@
 import "@fontsource-variable/jost"
 
 import Header from "../components/Header.astro"
+import Nav from "../components/Nav.astro"
 
 interface Props {
 	description: string;
@@ -22,16 +23,19 @@ const { description, title } = Astro.props;
 	</head>
 	<body>
 		<Header />
+		<Nav />
 		<slot />
 	</body>
 </html>
 <style is:global>
 	:root {
-		color-scheme: light dark;
+
 	}
 	html {
 		font-family: "Just Variable" ,system-ui, sans-serif;
 		background: #111e31;
+		background-size: 224px;
+		color-scheme: dark light;
 	}
 
 </style>

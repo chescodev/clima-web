@@ -1,0 +1,26 @@
+---
+const stationId = "IHUANUCO2";
+const date = "20240305";
+
+const res = await fetch(`https://api.weather.com/v2/pws/history/all?stationId=${stationId}&format=json&units=m&date=${date}&apiKey=0c4404a0e0014d948404a0e001ad94c3&numericPrecision=decimal`, {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  }
+});
+
+const data = await res.json();
+
+// Ordenar los datos por fecha de manera descendente
+const sortedData = data.observations.sort((a, b) => new Date(b.obsTimeUtc) - new Date(a.obsTimeUtc));
+
+// Obtener solo el primer registro, que sería el más reciente
+const latestRecord = sortedData[0];
+
+console.log(latestRecord);
+
+---
+
+<div class="grid gap-8 sm_grid-cols2 lg:grid-cols-3">
+
+</div>

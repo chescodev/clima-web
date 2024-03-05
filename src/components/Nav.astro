@@ -5,7 +5,16 @@ import NavButton from "./NavButton.astro"
 <nav 
     class="lex flex-col items-center justify-between w-full text-center md:flex-row"    
 >
-    <NavButton class="text-white" href="/">Datos Actuales</NavButton>
-    <NavButton class="text-white" href="/Historic">Datos Históricos</NavButton>
-    <NavButton class="text-white" href="/">Sobre Nosotros</NavButton>
+    <NavButton class="text-white" href="/">
+        <svg slot="before" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+        Datos Actuales
+    </NavButton>
+    <NavButton class="text-white" href="/data">
+        <svg slot="before" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+        Datos Históricos
+    </NavButton>
+    <NavButton class="text-white" href="/about">
+        <svg slot="before" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-text-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 10h-14" /><path d="M5 6h14" /><path d="M14 14h-9" /><path d="M5 18h6" /><path d="M18 15v6" /><path d="M15 18h6" /></svg>
+        Sobre Nosotros
+    </NavButton>
 </nav>
