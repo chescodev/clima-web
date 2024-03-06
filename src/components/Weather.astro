@@ -1,4 +1,6 @@
 ---
+import { APIWunderground } from '../types/api'
+
 const stationId = "IHUANUCO2";
 const date = "20240305";
 
@@ -11,16 +13,16 @@ const res = await fetch(`https://api.weather.com/v2/pws/history/all?stationId=${
 
 const data = await res.json();
 
+console.log(data);
+
+
 // Ordenar los datos por fecha de manera descendente
-const sortedData = data.observations.sort((a, b) => new Date(b.obsTimeUtc) - new Date(a.obsTimeUtc));
+//const sortedData = metric.sort((a, b) => new Date(b.obsTimeUtc) - new Date(a.obsTimeUtc));
 
 // Obtener solo el primer registro, que sería el más reciente
-const latestRecord = sortedData[0];
+//const latestRecord = sortedData[0];
 
-console.log(latestRecord);
+//console.log(latestRecord);
 
 ---
 
-<div class="grid gap-8 sm_grid-cols2 lg:grid-cols-3">
-
-</div>

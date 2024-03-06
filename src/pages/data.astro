@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Graphics from "../components/Graphics.astro"
+import Table from "../components/Table.astro"
+import DatePicker from "../components/DatePicker.astro"
 ---
 
 <Layout 
@@ -8,4 +10,7 @@ import Graphics from "../components/Graphics.astro"
     description=""
 >
     <h1>Datos Históricos</h1>
+    <DatePicker />
+    <Graphics/>
+    <Table/>
 </Layout>

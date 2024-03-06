@@ -1,3 +1,8 @@
+---
+import NavButton from "./NavButton.astro"
+---
+
+
 <header class="flex justify-between items-center py-5 mx-8">
     <section class="flex items-center gap-x-10 ocpacity-80">
         <img 
@@ -9,7 +14,11 @@
         <h1>Senati Clima App</h1>
     </section>
     <nav class="text-white flex flex-row gap-x-10 ocpacity-80">
-        <a href="">Login</a>
-        <a href="">Register</a>
+        <NavButton>
+            Login
+        </NavButton>
+        <NavButton>
+            Register
+        </NavButton>
     </nav>
 </header>
