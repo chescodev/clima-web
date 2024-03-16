@@ -1,3 +1,15 @@
+export async function get() {
+    return {
+        body: JSON.stringify({
+            id=""
+        })
+    }
+}
+
+
+
+
+
 export type APIWunderground = {
     stationID: string;
     tz: string;
